@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <div class="row my-4">
+    <h2 class="text-center">Count: {{ count$ | async }} <b></b></h2>
+  </div>
+
+  <div class="row mt-4">
+    <div class="d-flex justify-content-center gap-4">
+      <button
+        class="btn btn-danger"
+        (click)="decrement()"
+        [disabled]="(count$ | async) === 0"
+      >
+        Decrement
+      </button>
+      <button class="btn btn-warning" (click)="reset()">Reset</button>
+      <button class="btn btn-primary" (click)="increment()">Increment</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid m-2">
+    <a class="navbar-brand fw-bold" href="#">NGRX-Counter-App</a>
+    <div class="d-flex">
+      <button type="button" class="btn btn-primary position-relative">
+        <i class="bi bi-clock-history"> </i>
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          {{ count$ | async }}
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
